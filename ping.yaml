@@ -1,5 +1,5 @@
 ---
-- name: Ping we servers
+- name: Ping webservers
   hosts: web_servers
   tasks:
     - name: Ping host
