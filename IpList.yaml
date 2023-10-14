@@ -1,9 +1,9 @@
 [web_servers]
-webserver1 ansible_host=192.168.1.30
-webserver2 ansible_host=192.16.1.40
+webserver1 ansible_host=192.168.1.101
+webserver2 ansible_host=192.16.1.102
 
 
 [db_server]
-dbserver1 ansible_host=192.168.1.45
-dbserver2 ansible_host=192.168.1.70
-dbserver3 ansible_host=192.168.1.90
+dbserver1 ansible_host=192.168.1.103
+dbserver2 ansible_host=192.168.1.104
+dbserver3 ansible_host=192.168.1.105
