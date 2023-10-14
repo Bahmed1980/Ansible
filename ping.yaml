@@ -1,0 +1,6 @@
+---
+- name: Ping we servers
+  hosts: web_servers
+  tasks:
+    - name: Ping host
+      command: ping -c 4 {{webserver1}}
