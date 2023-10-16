@@ -1,0 +1,14 @@
+---
+- name: Install Vlc
+  hosts: web_servers
+  become: yes # Use priviledge escalation (sudo) to install packages
+  tasks:
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
+
+
+    - name: Instal VLC
+      apt:
+        name: vlc
+        state: present      
