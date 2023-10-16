@@ -3,4 +3,4 @@
   hosts: web_servers
   tasks:
     - name: Ping host
-      command: ping -c 4 {{webserver1}}
+      ping:

@@ -1,6 +1,5 @@
 [web_servers]
-webserver1 ansible_host=192.168.1.101
-webserver2 ansible_host=192.16.1.102
+webserver1 ansible_host=192.168.1.101 ansible_connection=ssh ansible_ssh_user=bahmed ansible_ssh_password=Bidemi1980
 
 
 [db_server]
