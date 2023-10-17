@@ -1,0 +1,14 @@
+---
+
+- name: SSH to host with different users
+  hosts: web_servers
+  become: no
+
+  tasks:
+    - name: SSH as Malik
+      shell: ssh Malik@192.168.1.101
+      become_user: Malik
+      become: yes
+      become_method: sudo
+      register: ssh_Malik_output
+      ignore_errors: yes 

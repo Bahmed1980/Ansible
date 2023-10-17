@@ -11,7 +11,8 @@
        state: present
        groups: sudo
        shell: /bin/bash
-       password: "{{ encrypted_password | malik1980}}"
+       password: "{{ encrypted_password | b64decode }}"
+
 
    - name:
      user:
@@ -19,4 +20,4 @@
        state: present
        groups: sudo
        shell: /bin/bash
-       password: "{{ encrypted_password | dust1980}}" 
+       password: "{{ encrypted_password | b64decode }}" 
