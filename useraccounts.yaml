@@ -1,0 +1,20 @@
+---
+- name: Create user accounts
+  hosts: web_servers
+  become: yes #Use priviledge escaltion (sudo) to create users
+  tasks:
+   - name: Create user1
+     user:
+       name: Malik
+       state: present
+       groups: sudo
+       shell: /bin/bash
+       password: "malik1980" # Replace with the user's ha
+
+   - name:
+     user:
+       name: Paulp
+       state: present
+       groups: sudo
+       shell: /bin/bash
+       password: "dust1980" # Replace with the user's ha
